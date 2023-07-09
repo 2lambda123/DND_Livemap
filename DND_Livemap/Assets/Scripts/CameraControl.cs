@@ -5,11 +5,14 @@ using Cinemachine;
 
 public class CameraControl : MonoBehaviour
 {
+    private static CameraControl _instance;
+    public static CameraControl Instance { get { return _instance; } }
+
     private Vector3 Origin;
     private Vector3 Difference;
     private Vector3 ResetCamera;
 
-    private CinemachineVirtualCamera virtualCam;
+    public CinemachineVirtualCamera virtualCam;
     private Camera cam;
 
     private bool drag = false;
@@ -17,6 +20,18 @@ public class CameraControl : MonoBehaviour
     public float ZoomChange;
     public float SmoothChange;
     public float MinSize, MaxSize;
+
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+    }
 
     private void Start()
     {
