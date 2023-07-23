@@ -12,7 +12,7 @@ public class NodeInformationManager : MonoBehaviour
 
     public NodeInfoDisplay disp;
 
-    public NodeData selectedNode;
+    [HideInInspector] public NodeData selectedNode;
     private Node previousNode;
 
     public TMP_Text Heading;

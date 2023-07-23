@@ -610,6 +610,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 7f590628e4985924ea3aa2861649848c, type: 2}
     - target: {fileID: 8125978958680833670, guid: d0e3c3fd6c98f994ca1945deabef65f3, type: 3}
+      propertyPath: ThisNode.Body
+      value: "Hey, this is a big test to show off how you can have multiple pages
+        on a single \nnode if you have enough lore to show off! So please write to
+        your hearts content as much as you want and dont worry about page count as
+        it will scale dynamicall!\n\nAHAHAHAHAHAHAHAHAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125978958680833670, guid: d0e3c3fd6c98f994ca1945deabef65f3, type: 3}
+      propertyPath: ThisNode.Name
+      value: Page Test Node
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125978958680833670, guid: d0e3c3fd6c98f994ca1945deabef65f3, type: 3}
       propertyPath: renderDistance
       value: 35
       objectReference: {fileID: 0}
@@ -842,6 +853,19 @@ PrefabInstance:
     - target: {fileID: 8125978958680833669, guid: d0e3c3fd6c98f994ca1945deabef65f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125978958680833670, guid: d0e3c3fd6c98f994ca1945deabef65f3, type: 3}
+      propertyPath: ThisNode.Body
+      value: This is a test node! In order to setup this node you just type in whatever
+        information on the location you want into this text body, and then give it
+        a name and recommended level. Use the scale modifier to control how much
+        you want the object to scale up while selected. Dont forget to set the render
+        distance to dynamically decide how much you need to zoom in before the name
+        of the location is rendered!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8125978958680833670, guid: d0e3c3fd6c98f994ca1945deabef65f3, type: 3}
+      propertyPath: ThisNode.Name
+      value: Test Node
       objectReference: {fileID: 0}
     - target: {fileID: 8125978958680833670, guid: d0e3c3fd6c98f994ca1945deabef65f3, type: 3}
       propertyPath: renderDistance
