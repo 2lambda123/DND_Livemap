@@ -30,6 +30,7 @@ public class Node : MonoBehaviour
         targetScale = new Vector2(1, 1);
 
         nodeName.text = ThisNode.Name;
+        FadeOutName();
     }
 
     private void Update()
@@ -47,7 +48,12 @@ public class Node : MonoBehaviour
         }
 
         //Check renda distance
-        if(!renderModeLarge)
+        CheckCameraZoom();
+    }
+
+    private void CheckCameraZoom()
+    {
+        if (!renderModeLarge)
         {
             if (CameraControl.Instance.virtualCam.m_Lens.OrthographicSize > renderDistance && visible)
             {
@@ -82,7 +88,7 @@ public class Node : MonoBehaviour
 
     public void SelectThisNode()
     {
-        if(NodeInformationManager.Instance.selectedNode == ThisNode) { return; }
+        if(NodeInformationManager.Instance.selectedNode == ThisNode) { NodeInformationManager.Instance.toggleNode(); }
         NodeInformationManager.Instance.newNode(ThisNode, this);
 
         ts = 0;

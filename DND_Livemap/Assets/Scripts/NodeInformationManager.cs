@@ -35,9 +35,17 @@ public class NodeInformationManager : MonoBehaviour
 
     private void Start()
     {
-        if(!showRecommendedLevel)
+        if (!showRecommendedLevel)
         {
             RecommendedLevel.gameObject.SetActive(false);
+        }
+    }
+
+    public void toggleNode()
+    {
+        if (disp.open != true)
+        {
+            disp.toggleInfo();
         }
     }
 
